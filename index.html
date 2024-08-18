@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Связь со мной</title>
+  <!-- подключение шрифта -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- подключение стилей -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('#burger').addEventListener('click', function(){
+        document.querySelector('#menu').classList.toggle('is-active')
+    })
+    this.document.querySelectorAll('.text').forEach(function(el){
+        el.addEventListener('click', function(event){
+            console.log(event)
+            event.target.classList.toggle('alert')
+        })
+    })
+})
+  </script>
+</head>
+<body class="montserrat-text">
+  <header class="header color-white">
+    <div class="header_flex">
+      <a class="color-white header_logo" href="index.html">©️ Code by Marina</a>
+      <h2 class="header_title">Frontend Developer</h2>
+      <ul class="header_nav">
+        <li class="btn-link"><a class="color-white" href="#work">Работы</a></li>
+        <li class="btn-link"><a class="color-white" href="#about">Обо мне</a></li>
+        <li class="btn-link"><a class="color-white" href="#contact">Контакты</a></li>
+      </ul>      
+    </div>
+    <div id="menu" class="menu is.active">
+      <ul class="menu_nav">
+        <li class="menu_link"><a class="color-white" href="#work">Работы</a></li>
+        <li class="menu_link"><a class="color-white" href="#about">Обо мне</a></li>
+        <li class="menu_link"><a class="color-white" href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+    <div id="burger" class="burger"></div>
+  </header>
+  <div class="general-class">
+    <section class="section_text">
+      <p class="section_text-description">Привет! Меня зовут Марина,<br> я занимаюсь адаптивной версткой сайтов по макету. <br>Пишите для сотрудничества</p>
+    </section>
+    <section class="section_form">
+      <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST" class="form">
+        <h2 class="form_title">Связаться со мной</h2>
+        <div class="form_row">
+          <div class="form_group">
+            <label for="name">Ваше имя:</label>
+            <input placeholder="Введите имя" type="text" name="Введите имя" id="name">
+          </div>
+          <div class="form_group">
+            <label for="email">Ваш email:</label>
+            <input placeholder="Введите email" type="email" name="" id="email">
+          </div>
+        </div>
+        <div class="form_group">
+          <label for="message">Ваще сообщение:</label>
+          <textarea placeholder="Введите сообщение..." id="message" cols="20" rows="5"></textarea>
+        </div>
+        <div class="btn-center">
+          <input class="btn" type="submit" value="Отправить!">
+        </div>
+      </form>
+    </section>
+  </div>
+  <section class="section_tickers">
+    <div class="ticker color-white">
+      <p class="ticker_description">Belyaeva Marina -</p>
+      <p class="ticker_description">Belyaeva Marina -</p>
+      <p class="ticker_description">Belyaeva Marina -</p>
+      <p class="ticker_description">Belyaeva Marina -</p>
+      <p class="ticker_description">Belyaeva Marina -</p>
+      <p class="ticker_description">Belyaeva Marina</p>
+    </div>
+  </section>
+  <section class="section_work" id="work">
+    <h1 class="work_title">Создание цифровых продуктов</h1>
+    <ul class="work_list">
+      <li class="work_link">
+        <div class="work_container">
+          <p class="work_error">Пусто</p>
+        </div>
+      </li>
+      <li class="work_link">
+        <div class="work_container">
+          <p class="work_error">Пусто</p>
+        </div>
+      </li>
+      <li class="work_link">
+        <div class="work_container">
+          <p class="work_error">Пусто</p>
+        </div>
+      </li>
+      <li class="work_link">
+        <div class="work_container">
+          <p class="work_error">Пусто</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="section_about" id="about">
+    <h1 class="work_title">Я могу помочь вам с . . .</h1>
+    <ul class="about_list">
+      <li class="about_link">
+        <div class="about_conteiner">
+          <p class="about_conteiner-num">01</p>
+          <h2 class="about_conteiner-title">Дизайн</h2>
+          <p class="about_conteiner-description">Создание полноценного веб-сайта от концепции до реализации - вот что выделяет меня из толпы. Мое отличное чутье на дизайн и навыки разработки позволяют мне писать не только код, но и создавать дизайн веб-сайта</p>
+        </div>
+      </li>
+      <li class="about_link">
+        <div class="about_conteiner">
+          <p class="about_conteiner-num">02</p>
+          <h2 class="about_conteiner-title">Разработка</h2>
+          <p class="about_conteiner-description">Я создаю адаптивные веб-сайты с нуля, которые органично вписываются в дизайн. Мое внимание сосредоточено на анимациях, переходах и взаимодействии</p>
+        </div>
+      </li>
+      <li class="about_link">
+        <div class="about_conteiner container03">
+          <p class="about_conteiner-num">03</p>
+          <h2 class="about_conteiner-title">Доработка</h2>
+          <p class="about_conteiner-description">Помогу с доработкой сайта,  оптимизирую структуру сайта для удобства пользователей и улучшу навигацию между страницами. Учту пожелания пользователей и предложу улучшения, которые сделают сайт более удобным и понятным</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <footer class="footer color-white" id="contact">
+    <h1 class="footer_title">Давайте работать вместе</h1>
+    <div class="footer_section-btn">
+      <button class="footer_btn">
+        <a href="mailto:mb.ox.ox@yandex.ru" class="color-white">mb.ox.ox@yandex.ru</a>
+      </button>
+      <button class="footer_btn">
+        <a href="tel:+79067143165" class="color-white">+7(906)714-31-65</a>
+      </button>
+    </div>
+    <div class="footer_section">
+      <div class="footer_display">
+      <ul class="footer_list">
+        <li class="footer_text">версия</li>
+        <li>2024 © Edition</li>
+      </ul>
+      <ul class="footer_list">
+        <li class="footer_text">локация</li>
+        <li>Россия, Москва</li>
+      </ul>
+    </div>
+      <ul class="footer_list">
+        <li class="footer_text">социальные сети</li>
+        <li>
+          <ul class="footer_social">
+            <li>
+              <a class="footer_link color-white" href="https://t.me/huwwwee">telegram</a>
+            </li>
+            <li >
+              <a class="footer_link color-white" href="https://github.com/mabelyaeva">github</a>
+            </li>
+            <li >  
+              <a class="footer_link color-white" href="https://vk.com/entreee">vk</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
